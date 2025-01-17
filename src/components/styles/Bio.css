@@ -2,143 +2,142 @@
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-  }
-  
-  .bio-header {
+}
+
+.bio-header {
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-bottom: 3rem;
-  }
-  
-  .bio-image-container {
+}
+
+.bio-image-container {
     flex-shrink: 0;
-  }
-  
-  .bio-image {
+}
+
+.bio-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .bio-title-section {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio-title-section {
     flex-grow: 1;
-  }
-  
-  .bio-name {
+}
+
+.bio-name {
     font-size: 2.5rem;
     color: #2c3e50;
     margin: 0;
-  }
-  
-  .bio-title {
+}
+
+.bio-title {
     font-size: 1.5rem;
     color: #7f8c8d;
     margin: 0.5rem 0 0 0;
-  }
-  
-  .bio-section {
+}
+
+.bio-section {
     margin-bottom: 2rem;
-  }
-  
-  .bio-section h3 {
+}
+
+.bio-section h3 {
     color: #34495e;
     border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .bio-text {
+}
+
+.bio-text {
     line-height: 1.6;
     color: #2c3e50;
-  }
-  
-  .experience-timeline {
+}
+
+.experience-timeline {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-  }
-  
-  .experience-item {
+}
+
+.experience-item {
     display: grid;
     grid-template-columns: 150px 1fr;
     gap: 1rem;
-  }
-  
-  .experience-date {
+}
+
+.experience-date {
     color: #7f8c8d;
     font-weight: 500;
-  }
-  
-  .experience-details h4 {
+}
+
+.experience-details h4 {
     margin: 0;
     color: #2c3e50;
-  }
-  
-  .experience-details h5 {
+}
+
+.experience-details h5 {
     margin: 0.5rem 0;
     color: #34495e;
-  }
-  
-  .education-list {
+}
+
+.education-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-  
-  .education-item h4 {
+}
+
+.education-item h4 {
     margin: 0;
     color: #2c3e50;
-  }
-  
-  .education-item h5 {
+}
+
+.education-item h5 {
     margin: 0.5rem 0;
     color: #34495e;
-  }
-  
-  .interests-list {
+}
+
+.interests-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-  }
-  
-  .interest-tag {
+}
+
+.interest-tag {
     background-color: #3498db;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     display: flex;
     gap: 1rem;
-  }
-  
-  .contact-link {
+}
+
+.contact-link {
     color: #3498db;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .contact-link:hover {
+}
+
+.contact-link:hover {
     color: #2980b9;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .bio-header {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .experience-item {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  
+
     .experience-date {
-      margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-  }
-  
+}
