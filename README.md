@@ -162,6 +162,8 @@ firebase init
 
 firebase deploy
 
+Access Firebase Console: https://console.firebase.google.com/ 
+
 
 # Getting Started with Create React App
 
