@@ -1,3 +1,154 @@
+# Portfolio Site with Firebase
+## Overview
+-------------
+A dynamic portfolio website built with React and Firebase, featuring authentication, real-time updates, and an admin dashboard for content management. This application allows administrators to manage projects, skills, and biographical information through a secure interface while providing visitors with a responsive and engaging viewing experience.
+
+# Features
+🔐 Secure Authentication System
+
+👩‍💼 Admin Dashboard
+
+📱 Responsive Design
+
+🔄 Real-time Updates
+
+📁 Project Management
+
+💪 Skills Showcase
+
+👤 Bio Management
+
+🖼️ Image Upload Support
+
+📊 Analytics Integration
+
+# Tech Stack
+React.js
+Firebase
+Authentication
+Firestore
+Storage
+Analytics
+React Router
+Environment Variables
+CSS3
+
+# Prerequisites
+Node.js (v14 or higher)
+npm or yarn
+Firebase account
+Git
+
+# Installation
+1. Clone the repository
+git clone https://github.com/gill-ngugi/react-redux-reducers.git 
+
+2. Install dependencies
+npm install or yarn install
+
+3. Create a Firebase project
+Go to Firebase Console
+Create a new project
+Enable Authentication, Firestore, and Storage services
+
+4. npm start
+
+# Firebase Configuration
+Security Rules
+Add these rules to your Firebase Console:
+// Firestore Rules
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth.uid == 'YOUR_ADMIN_UID';
+    }
+    
+    match /{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}
+
+// Storage Rules
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == 'YOUR_ADMIN_UID';
+    }
+  }
+}
+
+# Usage
+## Admin Access
+------------------
+Create an admin user through Firebase Authentication
+
+Set the user's UID in your Firebase security rules
+
+Use the admin credentials to log in through the /signin route
+
+## Content Management
+----------------------
+Through the admin dashboard, you can:
+
+Add/Edit/Delete projects
+
+Update skills and proficiency levels
+
+Modify biographical information
+
+Upload images and files
+
+## Public Access
+Visitors can:
+
+View projects
+
+Browse skills
+
+Read biographical information
+
+Contact through provided channels
+
+# Components
+## Authentication
+-------------------
+SignIn.js - Handles admin authentication
+PrivateRoute.js - Protects admin routes
+
+## Admin Dashboard
+-------------------
+Dashboard.js - Main admin interface
+
+ProjectForm.js - Project management
+
+SkillForm.js - Skills management
+
+BioForm.js - Biography management
+
+## Public Views
+----------------
+Projects.js - Displays projects
+
+Skills.js - Shows skills
+
+Bio.js - Presents biographical information
+
+# Deployment
+## Build the project
+npm run build
+
+## Deploy to Firebase
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
