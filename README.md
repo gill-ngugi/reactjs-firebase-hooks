@@ -43,8 +43,11 @@ CSS3
 
 # Prerequisites
 Node.js (v14 or higher)
+
 npm or yarn
+
 Firebase account
+
 Git
 
 # Installation
@@ -125,6 +128,7 @@ Contact through provided channels
 ## Authentication
 -------------------
 SignIn.js - Handles admin authentication
+
 PrivateRoute.js - Protects admin routes
 
 ## Admin Dashboard
@@ -151,8 +155,11 @@ npm run build
 
 ## Deploy to Firebase
 npm install -g firebase-tools
+
 firebase login
+
 firebase init
+
 firebase deploy
 
 
