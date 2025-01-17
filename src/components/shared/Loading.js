@@ -1,6 +1,6 @@
 // src/components/shared/Loading.js
 import { useEffect, useState } from 'react';
-import './Loading.css';
+import './styles/Loading.css';
 
 function Loading({ type = 'spinner', text = 'Loading...' }) {
   const [dots, setDots] = useState('');

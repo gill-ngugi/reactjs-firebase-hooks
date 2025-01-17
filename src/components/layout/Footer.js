@@ -39,12 +39,12 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: your.email@example.com</p>
+          <p>Email: gillian@gmail.com</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Your Portfolio. All rights reserved.</p>
+        <p>&copy; {currentYear} Gillian 2025. All rights reserved.</p>
       </div>
     </footer>
   );

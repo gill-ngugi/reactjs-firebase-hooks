@@ -14,7 +14,7 @@ import {
   } from 'firebase/firestore';
   import { db } from '../config/firebase';
   
-  // Generic CRUD operations
+  // CRUD operations
   export const firebaseUtils = {
     // Create
     create: async (collectionName, data) => {
