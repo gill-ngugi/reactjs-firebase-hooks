@@ -1,0 +1,110 @@
+/* src/components/shared/Loading.css */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  .loading-text {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* Spinner Style */
+  .loader-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Dots Style */
+  .loader-dots {
+    text-align: center;
+  }
+  
+  /* Pulse Style */
+  .loader-pulse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pulse {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.8); opacity: 0.5; }
+  }
+  
+  /* Skeleton Style */
+  .loader-skeleton {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .skeleton-line {
+    height: 20px;
+    background: linear-gradient(
+      90deg,
+      #f0f0f0 25%,
+      #e0e0e0 50%,
+      #f0f0f0 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .loading-container {
+      min-height: 150px;
+    }
+  
+    .spinner {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .pulse {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .loading-text {
+      font-size: 0.9rem;
+    }
+  }
+  
