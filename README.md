@@ -24,13 +24,21 @@ A dynamic portfolio website built with React and Firebase, featuring authenticat
 
 # Tech Stack
 React.js
+
 Firebase
+
 Authentication
+
 Firestore
+
 Storage
+
 Analytics
+
 React Router
+
 Environment Variables
+
 CSS3
 
 # Prerequisites
@@ -91,8 +99,7 @@ Set the user's UID in your Firebase security rules
 
 Use the admin credentials to log in through the /signin route
 
-## Content Management
-----------------------
+## Content Management
 Through the admin dashboard, you can:
 
 Add/Edit/Delete projects
